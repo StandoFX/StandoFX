@@ -1,1 +1,1 @@
-# stando.github.io
+# stando.github.io/standofx
