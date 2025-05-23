@@ -42,11 +42,11 @@
       <div class="sidebar-info">
 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Richard hanrick" width="80">
+          <img src="./assets/images/my-avatar.png" alt="Stanislav K." width="80">
         </figure>
 
         <div class="info-content">
-          <h1 class="name" title="Richard hanrick">Stanislav K.</h1>
+          <h1 class="name" title="Stanislav K.">Stanislav K.</h1>
 
           <p class="title">Web developer</p>
         </div>
@@ -71,23 +71,51 @@
               <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
+<style>
+  .contact-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
 
-              <a href="mailto:richard@example.com" class="contact-link">email@example.com</a>
-            </div>
+  .contact-link:hover {
+    color: #ffdb70; 
+    text-decoration: none;
+  }
+</style>
+
+<div class="contact-info">
+  <p class="contact-title">Email</p>
+  <a href="mailto:email@example.com" class="contact-link">email@example.com</a>
+</div>
 
           <li class="contact-item">
 
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <ion-icon name="star-outline"></ion-icon>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Info</p>
+<style>
+  .review-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
 
-              <address>LOC INFO</address>
-            </div>
+  .review-link:hover {
+    color: #ffdb70; 
+    text-decoration: none;
+  }
+</style>
+
+<div class="contact-info">
+  <p class="contact-title">Recenzie</p>
+  <address>
+    <a href="https://docs.google.com/forms" class="review-link">
+      Napísať recenziu
+    </a>
+  </address>
+</div>
 
           </li>
 
@@ -97,6 +125,7 @@
 
         <ul class="social-list">
 
+          <!--
           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-facebook"></ion-icon>
@@ -108,10 +137,16 @@
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
+            -->
 
           <li class="social-item">
             <a href="#" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
@@ -142,13 +177,13 @@
           <li class="navbar-item">
             <button class="navbar-link  active" data-nav-link>O mne</button>
           </li>
-
+      <!--
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
-
+      -->
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfólio</button>
+            <button class="navbar-link" data-nav-link>Portfolio</button>
           </li>
 
           <li class="navbar-item">
@@ -156,7 +191,7 @@
           </li>
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Kontakt</button>
+            <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
         </ul>
@@ -168,10 +203,10 @@
 
 
       <!--
-        - #ABOUT
+        - #O MNE SEKCIA
       -->
 
-      <article class="about  active" data-page="about">
+      <article class="about  active" data-page="o mne">
 
         <header>
           <h2 class="h2 article-title">O mne</h2>
@@ -179,17 +214,16 @@
 
         <section class="about-text">
           <p>
-            I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+            Tvorím moderné a funkčné weby, ktoré pomáhajú firmám zaujať a vyniknúť v online priestore.
             I enjoy
-            turning complex problems into simple, beautiful and intuitive designs.
+            Mojím cieľom je zviditeľniť značky, podnikateľov aj malé firmy – a dať im web, na ktorý môžu byť hrdí.
           </p>
 
           <p>
-            My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-            Moreover, I
-            add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-            across your
-            message and identity in the most creative way. I created web design for many famous brand companies.
+            Zameriavam sa najmä na WordPress stránky, e-shopy a blogy, pričom kladiem dôraz na
+            čistý dizajn, rýchlosť a jednoduchosť používania. Okrem tvorby nových stránok sa venujem
+            aj renovácii starých a neaktuálnych webov, ktoré premieňam na svieže, prehľadné a
+            responzívne riešenia.
           </p>
         </section>
 
@@ -212,10 +246,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web design</h4>
+                <h4 class="h4 service-item-title">Web dizajn</h4>
 
                 <p class="service-item-text">
-                  The most modern and high-quality design made at a professional level.
+                  Vytvorím vám WordPress webstránku na základe vašich potrieb a predstáv.
                 </p>
               </div>
 
@@ -228,10 +262,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
+                <h4 class="h4 service-item-title">Údržba Webu</h4>
 
                 <p class="service-item-text">
-                  High-quality development of sites at the professional level.
+                  Postarám sa o to, aby Váš web bol neustále aktuálny a funkčný.
                 </p>
               </div>
 
@@ -244,10 +278,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Mobile apps</h4>
+                <h4 class="h4 service-item-title">Mobilne priateľský dizajn</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for iOS and Android.
+                  Upravím Vašu webovú stránku tak, aby bola dostupná aj pre mobilných používateľov.
                 </p>
               </div>
 
@@ -260,10 +294,10 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Photography</h4>
+                <h4 class="h4 service-item-title">Grafické služby</h4>
 
                 <p class="service-item-text">
-                  I make high-quality photos of any category at a professional level.
+                  Vytváram logá, bannery či rôzne príspevky na sociálne siete presne podľa vašich predstáv.
                 </p>
               </div>
 
@@ -275,25 +309,67 @@
 
 
         <!--
-          - testimonials
+          - recenzie
         -->
 
-        <section class="testimonials">
+        <section class="recenzie">
 
-          <h3 class="h3 testimonials-title">Testimonials</h3>
+          <h3 class="h3 recenzie-title">Recenzie</h3>
 
-          <ul class="testimonials-list has-scrollbar">
+          <ul class="recenzie-list has-scrollbar">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="recenzie-item">
+              <div class="content-card" data-recenzie-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                <figure class="recenzie-avatar-box">
+                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-recenzie-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Daniel lewis</h4>
+<!-- Tvoja recenzia (skrátená verzia) -->
+<div class="recenzie-card" onclick="openPopup()">
+  <h4 class="h4 recenzie-item-title">Daniel Lewis</h4>
+  <div class="recenzie-text">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pulvinar mauris. Fusce...
+    </p>
+  </div>
+</div>
 
-                <div class="testimonials-text" data-testimonials-text>
+<!-- Skryté popup okienko -->
+<div id="popup" class="popup-overlay">
+  <div class="popup-content">
+    <button class="close-btn" onclick="closePopup()">✖</button>
+    <h4>Daniel Lewis</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pulvinar mauris. Fusce aliquam nisi non justo eleifend, sagittis egestas augue ullamcorper. Morbi quis vulputate elit. Morbi rutrum vel mi in iaculis. Phasellus ornare laoreet arcu. Donec placerat dolor vel orci porta luctus. Duis sit amet consectetur magna, non dictum purus. Proin consequat non ipsum ut pellentesque.
+    </p>
+  </div>
+</div>
+
+<script>
+  function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
+
+
+              </div>
+            </li>
+
+            <li class="recenzie-item">
+              <div class="content-card" data-recenzie-item>
+
+                <figure class="recenzie-avatar-box">
+                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-recenzie-avatar>
+                </figure>
+
+                <h4 class="h4 recenzie-item-title" data-recenzie-title>Jessica miller</h4>
+
+                <div class="recenzie-text" data-recenzie-text>
                   <p>
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
@@ -306,16 +382,16 @@
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="recenzie-item">
+              <div class="content-card" data-recenzie-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                <figure class="recenzie-avatar-box">
+                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-recenzie-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Jessica miller</h4>
+                <h4 class="h4 recenzie-item-title" data-recenzie-title>Emily evans</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="recenzie-text" data-recenzie-text>
                   <p>
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
@@ -328,38 +404,16 @@
               </div>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="recenzie-item">
+              <div class="content-card" data-recenzie-item>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                <figure class="recenzie-avatar-box">
+                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-recenzie-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 recenzie-item-title" data-recenzie-title>Henry william</h4>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience
-                    and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing
-                    elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
+                <div class="recenzie-text" data-recenzie-text>
                   <p>
                     Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
                     lot of experience
@@ -378,14 +432,14 @@
 
 
         <!--
-          - testimonials modal
+          - recenzie modal
         -->
 
         <div class="modal-container" data-modal-container>
 
           <div class="overlay" data-overlay></div>
 
-          <section class="testimonials-modal">
+          <section class="recenzie-modal">
 
             <button class="modal-close-btn" data-modal-close-btn>
               <ion-icon name="close-outline"></ion-icon>
@@ -423,12 +477,12 @@
 
 
         <!--
-          - clients
+          - klienti
         -->
 
         <section class="clients">
 
-          <h3 class="h3 clients-title">Clients</h3>
+          <h3 class="h3 clients-title">Klienti</h3>
 
           <ul class="clients-list has-scrollbar">
 
@@ -480,7 +534,7 @@
 
       <!--
         - #RESUME
-      -->
+
 
       <article class="resume" data-page="resume">
 
@@ -666,7 +720,7 @@
         </section>
 
       </article>
-
+      -->
 
 
 

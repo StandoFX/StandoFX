@@ -50,7 +50,7 @@
   );
   --text-gradient-yellow: linear-gradient(
     to right, 
-    hsl(45, 100%, 72%), 
+    #ffdb70, 
     hsl(35, 100%, 68%)
   );
 
@@ -557,14 +557,14 @@ main {
 
 
 /**
- * #testimonials 
+ * #recenzie 
  */
 
-.testimonials { margin-bottom: 30px; }
+.recenzie { margin-bottom: 30px; }
 
-.testimonials-title { margin-bottom: 20px; }
+.recenzie-title { margin-bottom: 20px; }
 
-.testimonials-list {
+.recenzie-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -578,12 +578,12 @@ main {
   scroll-snap-type: inline mandatory;
 }
 
-.testimonials-item {
+.recenzie-item {
   min-width: 100%;
   scroll-snap-align: center;
 }
 
-.testimonials-avatar-box {
+.recenzie-avatar-box {
   position: absolute;
   top: 0;
   left: 0;
@@ -593,9 +593,9 @@ main {
   box-shadow: var(--shadow-1);
 }
 
-.testimonials-item-title { margin-bottom: 7px; }
+.recenzie-item-title { margin-bottom: 7px; }
 
-.testimonials-text {
+.recenzie-text {
   color: var(--light-gray);
   font-size: var(--fs-6);
   font-weight: var(--fw-300);
@@ -609,7 +609,7 @@ main {
 
 
 /**
- * #testimonials-modal
+ * #recenzie-modal
  */
 
 .modal-container {
@@ -655,7 +655,7 @@ main {
   pointer-events: all;
 }
 
-.testimonials-modal {
+.recenzie-modal {
   background: var(--eerie-black-2);
   position: relative;
   padding: 15px;
@@ -669,7 +669,7 @@ main {
   z-index: 2;
 }
 
-.modal-container.active .testimonials-modal {
+.modal-container.active .recenzie-modal {
   transform: scale(1);
   opacity: 1;
 }
@@ -1406,11 +1406,11 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .service-content-box { text-align: left; }
 
-  /* testimonials */
+  /* recenzie */
 
-  .testimonials-title { margin-bottom: 25px; }
+  .recenzie-title { margin-bottom: 25px; }
 
-  .testimonials-list {
+  .recenzie-list {
     gap: 30px;
     margin: 0 -30px;
     padding: 30px;
@@ -1422,28 +1422,28 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding-top: 25px;
   }
 
-  .testimonials-avatar-box {
+  .recenzie-avatar-box {
     transform: translate(30px, -30px);
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  .recenzie-avatar-box img { width: 80px; }
 
-  .testimonials-item-title {
+  .recenzie-item-title {
     margin-bottom: 10px;
     margin-left: 95px;
   }
 
-  .testimonials-text {
+  .recenzie-text {
     line-clamp: 2;
     -webkit-line-clamp: 2;
   }
 
-  /* testimonials modal */
+  /* recenzie modal */
 
   .modal-container { padding: 20px; }
 
-  .testimonials-modal {
+  .recenzie-modal {
     display: flex;
     justify-content: flex-start;
     align-items: stretch;
@@ -1584,9 +1584,9 @@ textarea.form-input::-webkit-resizer { display: none; }
    * ABOUT
    */
 
-  /* testimonials modal */
+  /* recenzie modal */
 
-  .testimonials-modal {
+  .recenzie-modal {
     gap: 35px;
     max-width: 680px;
   }
@@ -1730,9 +1730,9 @@ textarea.form-input::-webkit-resizer { display: none; }
     gap: 20px 25px;
   }
 
-  /* testimonials */
+  /* recenzie */
 
-  .testimonials-item { min-width: calc(50% - 15px); }
+  .recenzie-item { min-width: calc(50% - 15px); }
 
   /* clients */
 
@@ -1878,5 +1878,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 	 */
 
   .timeline-text { max-width: 700px; }
+
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #1e1e1e;
+  color: white;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
 
 }
