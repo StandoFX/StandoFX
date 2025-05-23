@@ -325,38 +325,13 @@
                   <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-recenzie-avatar>
                 </figure>
 
-<!-- Tvoja recenzia (skrátená verzia) -->
-<div class="recenzie-card" onclick="openPopup()">
-  <h4 class="h4 recenzie-item-title">Daniel Lewis</h4>
-  <div class="recenzie-text">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pulvinar mauris. Fusce...
-    </p>
-  </div>
-</div>
+                <h4 class="h4 recenzie-item-title" data-recenzie-title>Daniel lewis</h4>
 
-<!-- Skryté popup okienko -->
-<div id="popup" class="popup-overlay">
-  <div class="popup-content">
-    <button class="close-btn" onclick="closePopup()">✖</button>
-    <h4>Daniel Lewis</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pulvinar mauris. Fusce aliquam nisi non justo eleifend, sagittis egestas augue ullamcorper. Morbi quis vulputate elit. Morbi rutrum vel mi in iaculis. Phasellus ornare laoreet arcu. Donec placerat dolor vel orci porta luctus. Duis sit amet consectetur magna, non dictum purus. Proin consequat non ipsum ut pellentesque.
-    </p>
-  </div>
-</div>
-
-<script>
-  function openPopup() {
-    document.getElementById("popup").style.display = "flex";
-  }
-
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-</script>
-
-
+                <div class="recenzie-text" data-recenzie-text>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ac pulvinar mauris. Fusce aliquam nisi non justo eleifend, sagittis egestas augue ullamcorper. Morbi quis vulputate elit. Morbi rutrum vel mi in iaculis. Phasellus ornare laoreet arcu. Donec placerat dolor vel orci porta luctus. Duis sit amet consectetur magna, non dictum purus. Proin consequat non ipsum ut pellentesque.
+                  </p>
+                </div>
               </div>
             </li>
 
